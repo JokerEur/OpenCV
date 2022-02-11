@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
-project( DisplayImage )
+project( DisplayImage)
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( DisplayImage lab01.cpp )
+add_executable( DisplayImage lab01.cpp lab01.report.md.in.txt)
 target_link_libraries( DisplayImage ${OpenCV_LIBS} )
