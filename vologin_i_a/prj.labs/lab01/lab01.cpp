@@ -47,6 +47,5 @@ int main()
 
   cv::rectangle(m, rc, {150}, 1);
 
-  cv::imshow("lab01", m);
-  cv::waitKey(0);
+  cv::imwrite("lab01.png",m);
 }
