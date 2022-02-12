@@ -1,6 +1,7 @@
 #include <opencv4/opencv2/opencv.hpp>
 #include <chrono>
 
+
 #define WIGHT 768
 #define HIGHT 180
 #define GAMMA1 2.2
@@ -26,7 +27,7 @@ int main()
   tmp.convertTo(tmp, CV_8UC1, 255.0f);
   auto stop = std::chrono::high_resolution_clock::now();
   auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-  std::cout << "Time for G1 = " << duration.count() << " ms"
+  std::cout << "Time for G1 = " << duration.count() << " μs"
             << "\n";
 
   tmp(rc).copyTo(m(rc));
@@ -41,7 +42,7 @@ int main()
 
   stop = std::chrono::high_resolution_clock::now();
   duration = std::chrono::duration_cast<std::chrono::microseconds>(stop-start);
-  std::cout << "Time for G2 = " << duration.count() << " ms"
+  std::cout << "Time for G2 = " << duration.count() << " μs"
             << "\n";
 
   cv::rectangle(m, rc, {150}, 1);
