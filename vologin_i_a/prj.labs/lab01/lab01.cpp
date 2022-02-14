@@ -1,7 +1,6 @@
 #include <opencv4/opencv2/opencv.hpp>
 #include <chrono>
 
-
 #define WIGHT 768
 #define HIGHT 180
 #define GAMMA1 2.2
@@ -41,11 +40,11 @@ int main()
       m.at<uchar>(y, x) = pow(m.at<uchar>(y, x) / 255.0f, GAMMA2) * 255.0f;
 
   stop = std::chrono::high_resolution_clock::now();
-  duration = std::chrono::duration_cast<std::chrono::microseconds>(stop-start);
+  duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
   std::cout << "Time for G2 = " << duration.count() << " μs"
             << "\n";
 
   cv::rectangle(m, rc, {150}, 1);
 
-  cv::imwrite("lab01.png",m);
+  cv::imwrite("lab01.png", m);
 }
