@@ -1,8 +1,8 @@
 ## Работа 3. Яркостные преобразования изображений
-автор: Вписать И.О.
+автор: Вологин И.А.
 дата: @time_stemp@
 
-url: [https://gitlab.com/2021-misis-spring/polevoy_d_v/-/tree/master/prj.labs/lab03](https://gitlab.com/2021-misis-spring/polevoy_d_v/-/tree/master/prj.labs/lab03)
+https://github.com/JokerEur/OpenCV/tree/master/vologin_i_a/prj.labs/lab02 
 
 ### Задание
 1. В качестве тестового использовать изображение data/cross_0256x0256.png
@@ -28,6 +28,9 @@ url: [https://gitlab.com/2021-misis-spring/polevoy_d_v/-/tree/master/prj.labs/la
 
 ![](lab03_viz_func.png)
 Рис. 5. Визуализация функции яркостного преобразования
+
+![](lab03_cheker.png)
+Рис. 6. Проверка функции
 
 ### Текст программы
 
