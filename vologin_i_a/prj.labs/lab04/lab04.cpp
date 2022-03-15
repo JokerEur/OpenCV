@@ -72,7 +72,7 @@ int main()
       int n = cv::connectedComponentsWithStats(Mask, res, stats, centroids);
       std::vector<cv::Vec3b> labels(n);
       int max = 0, imax = 0;
-      for (int j = 1; j < n; j++)
+      for (ptrdiff_t j = 1; j < n; j++)
       {
          if (max < stats.at<int>(j, cv::CC_STAT_AREA))
          {
